@@ -28,4 +28,4 @@ Features:
   > Search for a photo that is marked with a specific #hashtag
 
 > Commenting
-  > Ability to comment on your friend’s photos
+  > Ability to comment on your friend’s photos.
