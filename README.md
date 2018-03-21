@@ -3,11 +3,11 @@ This project is developed using swift language and it is targeting people using 
 
 
 Features:
-> Login 
-> Account Creation
-> Remember Me (remembers if person is logged in)
+# Login 
+# Account Creation
+# Remember Me (remembers if person is logged in)
 
-> The user’s Instagram page 
+# The user’s Instagram page 
   > Username
   > Short description of the user 
   > Photos taken
@@ -20,12 +20,12 @@ Features:
 
   > Shows the number of friends the person has
   
-> Camera -> take a picture, add a comment, geotag it, and save it to your instagram page
+# Camera -> take a picture, add a comment, geotag it, and save it to your instagram page
 
-> Find a Friend -> Show a map of your current location + the 5 friends who are closest to you
+# Find a Friend -> Show a map of your current location + the 5 friends who are closest to you
 
-> Search for a photo
+# Search for a photo
   > Search for a photo that is marked with a specific #hashtag
 
-> Commenting
-  > Ability to comment on your friend’s photos.
+# Commenting
+  > Ability to comment on your friend’s photos
