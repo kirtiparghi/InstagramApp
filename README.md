@@ -20,9 +20,11 @@ Features:
 
   > Shows the number of friends the person has
   
-# Camera -> take a picture, add a comment, geotag it, and save it to your instagram page
+# Camera 
+  > take a picture, add a comment, geotag it, and save it to your instagram page
 
-# Find a Friend -> Show a map of your current location + the 5 friends who are closest to you
+# Find a Friend
+  > Show a map of your current location + the 5 friends who are closest to you
 
 # Search for a photo
   > Search for a photo that is marked with a specific #hashtag
