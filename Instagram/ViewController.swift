@@ -129,26 +129,27 @@ class ViewController: UIViewController
         }
         else
         {
-            let alertBox = UIAlertController(title: "Instagram", message: "Login Successfully", preferredStyle: .alert)
-            let okButton = UIAlertAction(title: "OK", style: .default, handler: {
-                action in
-                self.performSegue(withIdentifier: "homeview", sender: self)
-            })
-            alertBox.addAction(okButton)
-            present(alertBox, animated: true)
+            self.performSegue(withIdentifier: "homeview", sender: self)
+//            let alertBox = UIAlertController(title: "Instagram", message: "Login Successfully", preferredStyle: .alert)
+//            let okButton = UIAlertAction(title: "OK", style: .default, handler: {
+//                action in
+//                self.performSegue(withIdentifier: "homeview", sender: self)
+//            })
+//            alertBox.addAction(okButton)
+//            present(alertBox, animated: true)
         }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)//Segue to send data to CheckResultView view controller.
     {
-        if (segue.identifier == "signup")
-        {
-            let signup =  segue.destination as! SignUpViewController
-        }
-        else if(segue.identifier == "homeview")
-        {
-            let homeview =  segue.destination as! HomeViewController
-        }
+//        if (segue.identifier == "signup")
+//        {
+//            let signup =  segue.destination as! SignUpViewController
+//        }
+//        else if(segue.identifier == "homeview")
+//        {
+//            let homeview =  segue.destination as! HomeViewController
+//        }
     }
     
     func createGradientLayer()//For view background

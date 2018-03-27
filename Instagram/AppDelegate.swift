@@ -18,14 +18,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         var defaultValue = userDefaults.string(forKey: "RememberStatus")
-        
         if(defaultValue == "Remember")
         {
             print("Remeber")
             let viewController: HomeViewController = storyboard.instantiateViewController(withIdentifier: "homeview") as! HomeViewController;
             let rootViewController = self.window!.rootViewController as! UINavigationController;
             rootViewController.pushViewController(viewController, animated: true);
+//            let mainStoryboardIpad : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//            let initialViewControlleripad : UIViewController = mainStoryboardIpad.instantiateViewController(withIdentifier: "homeview") as UIViewController
+//            self.window = UIWindow(frame: UIScreen.main.bounds)
+//            self.window?.rootViewController = initialViewControlleripad
+//            self.window?.makeKeyAndVisible()
         }
+    
+//        let mainStoryboardIpad : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//        let initialViewControlleripad : UIViewController = mainStoryboardIpad.instantiateViewController(withIdentifier: "homeview") as UIViewController
+//        self.window = UIWindow(frame: UIScreen.main.bounds)
+//        self.window?.rootViewController = initialViewControlleripad
+//        self.window?.makeKeyAndVisible()
+
         
         return true
     }
