@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C01FC082067252500D1B0EE /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C01FC072067252500D1B0EE /* Utility.swift */; };
 		3CA22B5E2062FEAD002BDE24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA22B5D2062FEAD002BDE24 /* AppDelegate.swift */; };
 		3CA22B602062FEAD002BDE24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA22B5F2062FEAD002BDE24 /* ViewController.swift */; };
 		3CA22B632062FEAD002BDE24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CA22B612062FEAD002BDE24 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C01FC072067252500D1B0EE /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		3CA22B5A2062FEAD002BDE24 /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CA22B5D2062FEAD002BDE24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3CA22B5F2062FEAD002BDE24 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				3CA22B642062FEAD002BDE24 /* Instagram.xcdatamodeld */,
 				3CA22B8E20656405002BDE24 /* SignUpViewController.swift */,
 				3CA22B90206578DC002BDE24 /* HomeViewController.swift */,
+				3C01FC072067252500D1B0EE /* Utility.swift */,
 			);
 			path = Instagram;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 			files = (
 				3CA22B91206578DC002BDE24 /* HomeViewController.swift in Sources */,
 				3CA22B602062FEAD002BDE24 /* ViewController.swift in Sources */,
+				3C01FC082067252500D1B0EE /* Utility.swift in Sources */,
 				3CA22B662062FEAD002BDE24 /* Instagram.xcdatamodeld in Sources */,
 				3CA22B8F20656405002BDE24 /* SignUpViewController.swift in Sources */,
 				3CA22B5E2062FEAD002BDE24 /* AppDelegate.swift in Sources */,

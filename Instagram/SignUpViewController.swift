@@ -53,6 +53,27 @@ class SignUpViewController: UIViewController
             alertBox.addAction(okButton)
             present(alertBox, animated: true)
         }
+        else if(Utility.isValidEmail(testStr: textfield_Emailid.text!) == false)
+        {
+            let alertBox = UIAlertController(title: "Instagram", message: "Please enter valid Email-Id", preferredStyle: .alert)
+            let okButton = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alertBox.addAction(okButton)
+            present(alertBox, animated: true)
+        }
+        else if((textfield_Password.text?.count)! <= 5)
+        {
+            let alertBox = UIAlertController(title: "Instagram", message: "Password must be 6 or more characters", preferredStyle: .alert)
+            let okButton = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alertBox.addAction(okButton)
+            present(alertBox, animated: true)
+        }
+        else if(textfield_Password.text != textfield_ConfirmPwd.text)
+        {
+            let alertBox = UIAlertController(title: "Instagram", message: "Password and Confirm Password doesn't match", preferredStyle: .alert)
+            let okButton = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alertBox.addAction(okButton)
+            present(alertBox, animated: true)
+        }
         else
         {
             let alertBox = UIAlertController(title: "Instagram", message: "Registered Successfully", preferredStyle: .alert)

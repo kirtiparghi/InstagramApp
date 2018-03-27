@@ -32,6 +32,30 @@ class ViewController: UIViewController
         createGradientLayer()
     }
     
+    override func viewWillAppear(_ animated: Bool)
+    {
+        rememberMeCheck()
+    }
+    
+    func rememberMeCheck()
+    {
+        if(userDefaults.string(forKey: "RememberStatus") != "Remember")
+        {
+            if(userDefaults.string(forKey: "Email") != "" || userDefaults.string(forKey: "Pwd") != "")
+            {
+                textfield_Email.text = userDefaults.string(forKey: "Email")
+                textfield_Password.text = userDefaults.string(forKey: "Pwd")
+                btn_CheckBox.setImage(UIImage(named: "rememberme_select"), for: .normal)
+            }
+            else
+            {
+                textfield_Email.text = ""
+                textfield_Password.text = ""
+                btn_CheckBox.setImage(UIImage(named: "remeberme_unselect"), for: .normal)
+            }
+        }
+    }
+    
     func gestureMethod()
     {
         //Getures
@@ -52,35 +76,62 @@ class ViewController: UIViewController
     
     @IBAction func btn_CheckBox(_ sender: Any)//Remember me functionality
     {
-        if(btn_CheckBox.currentImage == UIImage(named: "remeberme_unselect"))
+        if(textfield_Email.text != "" || textfield_Password.text != "")
         {
-            btn_CheckBox.setImage(UIImage(named: "rememberme_select"), for: .normal)
-            userDefaults.setValue("Remember", forKey: "RememberStatus")
+            if(btn_CheckBox.currentImage == UIImage(named: "remeberme_unselect"))
+            {
+                btn_CheckBox.setImage(UIImage(named: "rememberme_select"), for: .normal)
+                userDefaults.setValue("Remember", forKey: "RememberStatus")
+                userDefaults.setValue(textfield_Email.text, forKey: "Email")
+                userDefaults.setValue(textfield_Password.text, forKey: "Pwd")
+            }
+            else if(btn_CheckBox.currentImage == UIImage(named: "rememberme_select"))
+            {
+                btn_CheckBox.setImage(UIImage(named: "remeberme_unselect"), for: .normal)
+                userDefaults.setValue("notRemember", forKey: "RememberStatus")
+                userDefaults.setValue("", forKey: "Email")
+                userDefaults.setValue("", forKey: "Pwd")
+            }
         }
-        else if(btn_CheckBox.currentImage == UIImage(named: "rememberme_select"))
+        else
         {
-            btn_CheckBox.setImage(UIImage(named: "remeberme_unselect"), for: .normal)
-            userDefaults.setValue("notRemember", forKey: "RememberStatus")
+            view.endEditing(true)
+            let alertBox = UIAlertController(title: "Instagram", message: "Please fill the fields first.", preferredStyle: .alert)
+            let okButton = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alertBox.addAction(okButton)
+            present(alertBox, animated: true)
         }
     }
     
     @IBAction func btn_Login(_ sender: Any)
     {
+        view.endEditing(true)
         if(textfield_Email.text?.isEmpty != false || textfield_Password.text?.isEmpty != false)
         {
-            view.endEditing(true)
             let alertBox = UIAlertController(title: "Instagram", message: "All fields are mandatory", preferredStyle: .alert)
+            let okButton = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alertBox.addAction(okButton)
+            present(alertBox, animated: true)
+        }
+        else if(Utility.isValidEmail(testStr: textfield_Email.text!) == false)
+        {
+            let alertBox = UIAlertController(title: "Instagram", message: "Please enter valid Email-Id", preferredStyle: .alert)
+            let okButton = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alertBox.addAction(okButton)
+            present(alertBox, animated: true)
+        }
+        else if((self.textfield_Password.text?.count)! <= 5)
+        {
+            let alertBox = UIAlertController(title: "Instagram", message: "Password must be 6 or more characters", preferredStyle: .alert)
             let okButton = UIAlertAction(title: "OK", style: .default, handler: nil)
             alertBox.addAction(okButton)
             present(alertBox, animated: true)
         }
         else
         {
-            view.endEditing(true)
             let alertBox = UIAlertController(title: "Instagram", message: "Login Successfully", preferredStyle: .alert)
             let okButton = UIAlertAction(title: "OK", style: .default, handler: {
                 action in
-                
                 self.performSegue(withIdentifier: "homeview", sender: self)
             })
             alertBox.addAction(okButton)
