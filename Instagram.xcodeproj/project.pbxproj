@@ -24,6 +24,13 @@
 		16DD5FB9206A946A00CE632C /* FeedsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DD5FB8206A946A00CE632C /* FeedsTableViewCell.swift */; };
 		16DD5FBB206A9C7100CE632C /* PhotoDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DD5FBA206A9C7100CE632C /* PhotoDetailVC.swift */; };
 		16DD5FBD206AA3A600CE632C /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DD5FBC206AA3A600CE632C /* CommentCell.swift */; };
+		16DD5FBF206AB56600CE632C /* mapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DD5FBE206AB56600CE632C /* mapViewController.swift */; };
+		16DD5FEA206ADEE400CE632C /* Comment+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DD5FE4206ADEE400CE632C /* Comment+CoreDataClass.swift */; };
+		16DD5FEB206ADEE400CE632C /* Comment+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DD5FE5206ADEE400CE632C /* Comment+CoreDataProperties.swift */; };
+		16DD5FEC206ADEE400CE632C /* Photos+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DD5FE6206ADEE400CE632C /* Photos+CoreDataClass.swift */; };
+		16DD5FED206ADEE400CE632C /* Photos+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DD5FE7206ADEE400CE632C /* Photos+CoreDataProperties.swift */; };
+		16DD5FEE206ADEE400CE632C /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DD5FE8206ADEE400CE632C /* User+CoreDataClass.swift */; };
+		16DD5FEF206ADEE400CE632C /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DD5FE9206ADEE400CE632C /* User+CoreDataProperties.swift */; };
 		3C01FC082067252500D1B0EE /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C01FC072067252500D1B0EE /* Utility.swift */; };
 		3CA22B5E2062FEAD002BDE24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA22B5D2062FEAD002BDE24 /* AppDelegate.swift */; };
 		3CA22B602062FEAD002BDE24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA22B5F2062FEAD002BDE24 /* ViewController.swift */; };
@@ -72,6 +79,13 @@
 		16DD5FB8206A946A00CE632C /* FeedsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsTableViewCell.swift; sourceTree = "<group>"; };
 		16DD5FBA206A9C7100CE632C /* PhotoDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailVC.swift; sourceTree = "<group>"; };
 		16DD5FBC206AA3A600CE632C /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		16DD5FBE206AB56600CE632C /* mapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mapViewController.swift; sourceTree = "<group>"; };
+		16DD5FE4206ADEE400CE632C /* Comment+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comment+CoreDataClass.swift"; sourceTree = "<group>"; };
+		16DD5FE5206ADEE400CE632C /* Comment+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comment+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		16DD5FE6206ADEE400CE632C /* Photos+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Photos+CoreDataClass.swift"; sourceTree = "<group>"; };
+		16DD5FE7206ADEE400CE632C /* Photos+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Photos+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		16DD5FE8206ADEE400CE632C /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		16DD5FE9206ADEE400CE632C /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3C01FC072067252500D1B0EE /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		3CA22B5A2062FEAD002BDE24 /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CA22B5D2062FEAD002BDE24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -168,6 +182,13 @@
 		3CA22B5C2062FEAD002BDE24 /* Instagram */ = {
 			isa = PBXGroup;
 			children = (
+				16DD5FE4206ADEE400CE632C /* Comment+CoreDataClass.swift */,
+				16DD5FE5206ADEE400CE632C /* Comment+CoreDataProperties.swift */,
+				16DD5FE6206ADEE400CE632C /* Photos+CoreDataClass.swift */,
+				16DD5FE7206ADEE400CE632C /* Photos+CoreDataProperties.swift */,
+				16DD5FE8206ADEE400CE632C /* User+CoreDataClass.swift */,
+				16DD5FE9206ADEE400CE632C /* User+CoreDataProperties.swift */,
+				16DD5FBE206AB56600CE632C /* mapViewController.swift */,
 				16DD5F98206A920200CE632C /* Resources */,
 				3CA22B5D2062FEAD002BDE24 /* AppDelegate.swift */,
 				3CA22B5F2062FEAD002BDE24 /* ViewController.swift */,
@@ -353,14 +374,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CA22B91206578DC002BDE24 /* HomeViewController.swift in Sources */,
+				16DD5FBF206AB56600CE632C /* mapViewController.swift in Sources */,
+				16DD5FEF206ADEE400CE632C /* User+CoreDataProperties.swift in Sources */,
+				16DD5FED206ADEE400CE632C /* Photos+CoreDataProperties.swift in Sources */,
 				3CA22B602062FEAD002BDE24 /* ViewController.swift in Sources */,
 				16DD5FB9206A946A00CE632C /* FeedsTableViewCell.swift in Sources */,
 				3C01FC082067252500D1B0EE /* Utility.swift in Sources */,
 				16DD5FBB206A9C7100CE632C /* PhotoDetailVC.swift in Sources */,
 				16DD5FBD206AA3A600CE632C /* CommentCell.swift in Sources */,
+				16DD5FEA206ADEE400CE632C /* Comment+CoreDataClass.swift in Sources */,
 				3CA22B662062FEAD002BDE24 /* Instagram.xcdatamodeld in Sources */,
 				3CA22B8F20656405002BDE24 /* SignUpViewController.swift in Sources */,
+				16DD5FEC206ADEE400CE632C /* Photos+CoreDataClass.swift in Sources */,
+				16DD5FEB206ADEE400CE632C /* Comment+CoreDataProperties.swift in Sources */,
 				3CA22B5E2062FEAD002BDE24 /* AppDelegate.swift in Sources */,
+				16DD5FEE206ADEE400CE632C /* User+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,7 +555,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8UWTW85NW2;
+				DEVELOPMENT_TEAM = 7B7KJQCFCP;
 				INFOPLIST_FILE = Instagram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vishal.Instagram;
@@ -542,7 +570,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8UWTW85NW2;
+				DEVELOPMENT_TEAM = 7B7KJQCFCP;
 				INFOPLIST_FILE = Instagram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vishal.Instagram;

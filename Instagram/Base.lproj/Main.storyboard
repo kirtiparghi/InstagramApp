@@ -432,12 +432,46 @@
                     </view>
                     <connections>
                         <outlet property="btnAddComment" destination="NiG-vf-9U5" id="t5n-fb-eBn"/>
+                        <outlet property="imgPin" destination="65g-86-WJE" id="8yc-v6-TTW"/>
                         <outlet property="tblViewComments" destination="KIc-BF-AoO" id="Hty-mx-wYw"/>
+                        <segue destination="RsH-3B-aRZ" kind="show" identifier="mapsegue" id="Z2F-1C-JH7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NL9-xy-LXg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1175.2" y="905.3973013493254"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="H15-QC-KQt">
+            <objects>
+                <viewController id="RsH-3B-aRZ" customClass="mapViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Q9F-5x-SML">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Ak0-dh-lL7">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <connections>
+                                    <outlet property="delegate" destination="RsH-3B-aRZ" id="Gs1-nX-4X6"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ak0-dh-lL7" firstAttribute="top" secondItem="Dru-Fc-GRc" secondAttribute="top" id="qM2-4d-iil"/>
+                            <constraint firstItem="Ak0-dh-lL7" firstAttribute="leading" secondItem="Dru-Fc-GRc" secondAttribute="leading" id="uEB-9F-XGi"/>
+                            <constraint firstItem="Ak0-dh-lL7" firstAttribute="bottom" secondItem="Dru-Fc-GRc" secondAttribute="bottom" id="uSx-0Y-7pR"/>
+                            <constraint firstItem="Ak0-dh-lL7" firstAttribute="trailing" secondItem="Dru-Fc-GRc" secondAttribute="trailing" id="uUr-TT-ZEf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Dru-Fc-GRc"/>
+                    </view>
+                    <connections>
+                        <outlet property="map" destination="Ak0-dh-lL7" id="jsA-tf-Lit"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vuQ-ib-066" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1956" y="896.40179910044981"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="IiH-wy-BdH">

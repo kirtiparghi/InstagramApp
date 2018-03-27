@@ -14,11 +14,17 @@ class PhotoDetailVC: UIViewController, UITableViewDataSource, UITableViewDelegat
     
     @IBOutlet weak var tblViewComments: UITableView!
     
+    @IBOutlet weak var imgPin: UIImageView!
+    
     let userDefaults = UserDefaults.standard
     
     var gradientLayer: CAGradientLayer!
 
     @IBOutlet weak var btnAddComment: UIButton!
+    
+    @IBAction func btnPinTapped(sender:UIButton) {
+        self.performSegue(withIdentifier: "pinSegue", sender: self)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,8 +32,17 @@ class PhotoDetailVC: UIViewController, UITableViewDataSource, UITableViewDelegat
         setLogoutButton()
         setBackButton()
         createGradientLayer()
+        
+        let singleTap = UITapGestureRecognizer(target: self, action: Selector("tapDetected"))
+        imgPin.isUserInteractionEnabled = true
+        imgPin.addGestureRecognizer(singleTap)
     }
 
+    //Action
+    @objc func tapDetected() {
+        self.performSegue(withIdentifier: "mapsegue", sender: self)
+    }
+    
     func createGradientLayer()//For view background
     {
         gradientLayer = CAGradientLayer()

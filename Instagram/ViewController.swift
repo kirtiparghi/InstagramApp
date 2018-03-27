@@ -41,7 +41,13 @@ class ViewController: UIViewController
     {
         if(userDefaults.string(forKey: "RememberStatus") != "Remember")
         {
-            if(userDefaults.string(forKey: "Email") != "" || userDefaults.string(forKey: "Pwd") != "")
+            if(userDefaults.string(forKey: "Email") == nil || userDefaults.string(forKey: "Pwd") == nil)
+            {
+                textfield_Email.text = ""
+                textfield_Password.text = ""
+                btn_CheckBox.setImage(UIImage(named: "remeberme_unselect"), for: .normal)
+            }
+            else if(userDefaults.string(forKey: "Email") != "" || userDefaults.string(forKey: "Pwd") != "")
             {
                 textfield_Email.text = userDefaults.string(forKey: "Email")
                 textfield_Password.text = userDefaults.string(forKey: "Pwd")
@@ -76,6 +82,7 @@ class ViewController: UIViewController
     
     @IBAction func btn_CheckBox(_ sender: Any)//Remember me functionality
     {
+        view.endEditing(true)
         if(textfield_Email.text != "" || textfield_Password.text != "")
         {
             if(btn_CheckBox.currentImage == UIImage(named: "remeberme_unselect"))
@@ -95,7 +102,6 @@ class ViewController: UIViewController
         }
         else
         {
-            view.endEditing(true)
             let alertBox = UIAlertController(title: "Instagram", message: "Please fill the fields first.", preferredStyle: .alert)
             let okButton = UIAlertAction(title: "OK", style: .default, handler: nil)
             alertBox.addAction(okButton)
@@ -129,14 +135,20 @@ class ViewController: UIViewController
         }
         else
         {
-            self.performSegue(withIdentifier: "homeview", sender: self)
-//            let alertBox = UIAlertController(title: "Instagram", message: "Login Successfully", preferredStyle: .alert)
-//            let okButton = UIAlertAction(title: "OK", style: .default, handler: {
-//                action in
-//                self.performSegue(withIdentifier: "homeview", sender: self)
-//            })
-//            alertBox.addAction(okButton)
-//            present(alertBox, animated: true)
+            let alertBox = UIAlertController(title: "Instagram", message: "Login Successfully", preferredStyle: .alert)
+            let okButton = UIAlertAction(title: "OK", style: .default, handler: {
+                action in
+                
+                if(self.btn_CheckBox.currentImage == UIImage(named: "rememberme_select"))
+                {
+                    self.userDefaults.setValue(self.textfield_Email.text, forKey: "Email")
+                    self.userDefaults.setValue(self.textfield_Password.text, forKey: "Pwd")
+                }
+                
+                self.performSegue(withIdentifier: "homeview", sender: self)
+            })
+            alertBox.addAction(okButton)
+            present(alertBox, animated: true)
         }
     }
     
