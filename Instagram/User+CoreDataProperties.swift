@@ -10,7 +10,6 @@
 import Foundation
 import CoreData
 
-
 extension User {
 
     @nonobjc public class func fetchRequest() -> NSFetchRequest<User> {
@@ -24,7 +23,6 @@ extension User {
     @NSManaged public var latitude: String?
     @NSManaged public var longitude: String?
     @NSManaged public var photos: NSSet?
-
 }
 
 // MARK: Generated accessors for photos
@@ -41,5 +39,4 @@ extension User {
 
     @objc(removePhotos:)
     @NSManaged public func removeFromPhotos(_ values: NSSet)
-
 }

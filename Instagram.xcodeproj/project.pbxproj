@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1651CCD5206F05DA00AB00F4 /* AddPhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1651CCD4206F05DA00AB00F4 /* AddPhotoVC.swift */; };
+		1651CCD72070778100AB00F4 /* PhotoLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1651CCD62070778100AB00F4 /* PhotoLocationVC.swift */; };
+		16600C942073CAD700F8CE4D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16600C932073CAD700F8CE4D /* ProfileViewController.swift */; };
+		16600C962073CB3300F8CE4D /* feedPhotoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16600C952073CB3300F8CE4D /* feedPhotoViewCell.swift */; };
 		16DD5FA7206A920200CE632C /* 0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16DD5F9A206A920200CE632C /* 0.jpg */; };
 		16DD5FA8206A920200CE632C /* 00.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16DD5F9B206A920200CE632C /* 00.jpg */; };
 		16DD5FA9206A920200CE632C /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16DD5F9C206A920200CE632C /* 1.jpg */; };
@@ -42,6 +46,8 @@
 		3CA22B812062FEAE002BDE24 /* InstagramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA22B802062FEAE002BDE24 /* InstagramUITests.swift */; };
 		3CA22B8F20656405002BDE24 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA22B8E20656405002BDE24 /* SignUpViewController.swift */; };
 		3CA22B91206578DC002BDE24 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA22B90206578DC002BDE24 /* HomeViewController.swift */; };
+		3CC59DF32071902E009F61A2 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC59DF22071902E009F61A2 /* SearchViewController.swift */; };
+		3CC59DF52071926D009F61A2 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC59DF42071926D009F61A2 /* SearchTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +68,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1651CCD4206F05DA00AB00F4 /* AddPhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoVC.swift; sourceTree = "<group>"; };
+		1651CCD62070778100AB00F4 /* PhotoLocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLocationVC.swift; sourceTree = "<group>"; };
+		16600C932073CAD700F8CE4D /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		16600C952073CB3300F8CE4D /* feedPhotoViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = feedPhotoViewCell.swift; sourceTree = "<group>"; };
 		16DD5F9A206A920200CE632C /* 0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 0.jpg; sourceTree = "<group>"; };
 		16DD5F9B206A920200CE632C /* 00.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 00.jpg; sourceTree = "<group>"; };
 		16DD5F9C206A920200CE632C /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
@@ -103,6 +113,8 @@
 		3CA22B822062FEAE002BDE24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3CA22B8E20656405002BDE24 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		3CA22B90206578DC002BDE24 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		3CC59DF22071902E009F61A2 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		3CC59DF42071926D009F61A2 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +142,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16600C922073CA8E00F8CE4D /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				16600C952073CB3300F8CE4D /* feedPhotoViewCell.swift */,
+				16600C932073CAD700F8CE4D /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		16600C972073DBE700F8CE4D /* PhotoLocation */ = {
+			isa = PBXGroup;
+			children = (
+				1651CCD62070778100AB00F4 /* PhotoLocationVC.swift */,
+			);
+			path = PhotoLocation;
+			sourceTree = "<group>";
+		};
 		16DD5F98206A920200CE632C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,27 +211,29 @@
 		3CA22B5C2062FEAD002BDE24 /* Instagram */ = {
 			isa = PBXGroup;
 			children = (
+				16600C972073DBE700F8CE4D /* PhotoLocation */,
+				16600C922073CA8E00F8CE4D /* Profile */,
+				3CC59DFC2072B416009F61A2 /* AddPhoto */,
+				3CC59DFB2072B407009F61A2 /* PostDetail */,
+				3CC59DFA2072B386009F61A2 /* MapView */,
+				3CC59DF92072B37D009F61A2 /* CustomCells */,
+				3CC59DF82072B375009F61A2 /* HomeView */,
+				3CC59DF72072B36C009F61A2 /* Authentication */,
+				3CC59DF62072B362009F61A2 /* SearchView */,
 				16DD5FE4206ADEE400CE632C /* Comment+CoreDataClass.swift */,
 				16DD5FE5206ADEE400CE632C /* Comment+CoreDataProperties.swift */,
 				16DD5FE6206ADEE400CE632C /* Photos+CoreDataClass.swift */,
 				16DD5FE7206ADEE400CE632C /* Photos+CoreDataProperties.swift */,
 				16DD5FE8206ADEE400CE632C /* User+CoreDataClass.swift */,
 				16DD5FE9206ADEE400CE632C /* User+CoreDataProperties.swift */,
-				16DD5FBE206AB56600CE632C /* mapViewController.swift */,
 				16DD5F98206A920200CE632C /* Resources */,
 				3CA22B5D2062FEAD002BDE24 /* AppDelegate.swift */,
-				3CA22B5F2062FEAD002BDE24 /* ViewController.swift */,
 				3CA22B612062FEAD002BDE24 /* Main.storyboard */,
 				3CA22B672062FEAD002BDE24 /* Assets.xcassets */,
 				3CA22B692062FEAD002BDE24 /* LaunchScreen.storyboard */,
 				3CA22B6C2062FEAD002BDE24 /* Info.plist */,
 				3CA22B642062FEAD002BDE24 /* Instagram.xcdatamodeld */,
-				3CA22B8E20656405002BDE24 /* SignUpViewController.swift */,
-				3CA22B90206578DC002BDE24 /* HomeViewController.swift */,
 				3C01FC072067252500D1B0EE /* Utility.swift */,
-				16DD5FB8206A946A00CE632C /* FeedsTableViewCell.swift */,
-				16DD5FBA206A9C7100CE632C /* PhotoDetailVC.swift */,
-				16DD5FBC206AA3A600CE632C /* CommentCell.swift */,
 			);
 			path = Instagram;
 			sourceTree = "<group>";
@@ -223,6 +254,65 @@
 				3CA22B822062FEAE002BDE24 /* Info.plist */,
 			);
 			path = InstagramUITests;
+			sourceTree = "<group>";
+		};
+		3CC59DF62072B362009F61A2 /* SearchView */ = {
+			isa = PBXGroup;
+			children = (
+				3CC59DF22071902E009F61A2 /* SearchViewController.swift */,
+			);
+			path = SearchView;
+			sourceTree = "<group>";
+		};
+		3CC59DF72072B36C009F61A2 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				3CA22B5F2062FEAD002BDE24 /* ViewController.swift */,
+				3CA22B8E20656405002BDE24 /* SignUpViewController.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		3CC59DF82072B375009F61A2 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				3CA22B90206578DC002BDE24 /* HomeViewController.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		3CC59DF92072B37D009F61A2 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				16DD5FB8206A946A00CE632C /* FeedsTableViewCell.swift */,
+				16DD5FBC206AA3A600CE632C /* CommentCell.swift */,
+				3CC59DF42071926D009F61A2 /* SearchTableViewCell.swift */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		3CC59DFA2072B386009F61A2 /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				16DD5FBE206AB56600CE632C /* mapViewController.swift */,
+			);
+			path = MapView;
+			sourceTree = "<group>";
+		};
+		3CC59DFB2072B407009F61A2 /* PostDetail */ = {
+			isa = PBXGroup;
+			children = (
+				16DD5FBA206A9C7100CE632C /* PhotoDetailVC.swift */,
+			);
+			path = PostDetail;
+			sourceTree = "<group>";
+		};
+		3CC59DFC2072B416009F61A2 /* AddPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				1651CCD4206F05DA00AB00F4 /* AddPhotoVC.swift */,
+			);
+			path = AddPhoto;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -373,20 +463,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1651CCD5206F05DA00AB00F4 /* AddPhotoVC.swift in Sources */,
 				3CA22B91206578DC002BDE24 /* HomeViewController.swift in Sources */,
 				16DD5FBF206AB56600CE632C /* mapViewController.swift in Sources */,
 				16DD5FEF206ADEE400CE632C /* User+CoreDataProperties.swift in Sources */,
+				3CC59DF32071902E009F61A2 /* SearchViewController.swift in Sources */,
 				16DD5FED206ADEE400CE632C /* Photos+CoreDataProperties.swift in Sources */,
 				3CA22B602062FEAD002BDE24 /* ViewController.swift in Sources */,
 				16DD5FB9206A946A00CE632C /* FeedsTableViewCell.swift in Sources */,
 				3C01FC082067252500D1B0EE /* Utility.swift in Sources */,
+				3CC59DF52071926D009F61A2 /* SearchTableViewCell.swift in Sources */,
+				1651CCD72070778100AB00F4 /* PhotoLocationVC.swift in Sources */,
 				16DD5FBB206A9C7100CE632C /* PhotoDetailVC.swift in Sources */,
 				16DD5FBD206AA3A600CE632C /* CommentCell.swift in Sources */,
 				16DD5FEA206ADEE400CE632C /* Comment+CoreDataClass.swift in Sources */,
 				3CA22B662062FEAD002BDE24 /* Instagram.xcdatamodeld in Sources */,
 				3CA22B8F20656405002BDE24 /* SignUpViewController.swift in Sources */,
 				16DD5FEC206ADEE400CE632C /* Photos+CoreDataClass.swift in Sources */,
+				16600C962073CB3300F8CE4D /* feedPhotoViewCell.swift in Sources */,
 				16DD5FEB206ADEE400CE632C /* Comment+CoreDataProperties.swift in Sources */,
+				16600C942073CAD700F8CE4D /* ProfileViewController.swift in Sources */,
 				3CA22B5E2062FEAD002BDE24 /* AppDelegate.swift in Sources */,
 				16DD5FEE206ADEE400CE632C /* User+CoreDataClass.swift in Sources */,
 			);
